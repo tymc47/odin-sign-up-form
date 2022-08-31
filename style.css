@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Saira+Condensed:wght@100&display=swap');
+
 body {
     margin: 0;
+    font-family: 'Michroma', sans-serif;
 
 }
 
@@ -24,6 +27,7 @@ div.bg-gif > h3 {
     color: white;
     top: 50vh;
     right: 36px;
+    background-color: rgb(0, 0, 0, 0.5);
 }
 
 form.sign-up {
@@ -34,7 +38,7 @@ form.sign-up {
 }
 
 .form-section1{
-    padding: 100px 250px 50px 50px;
+    padding: 100px min(250px, 10vw) 50px 50px;
 }
 
 .form-section2{
@@ -64,10 +68,45 @@ li {
 }
 
 label {
+    font-family: 'Saira Condensed', sans-serif;
     display: block;
 }
 
 button {
+    font-family: 'Michroma', sans-serif;
     margin: 2vh 0 ;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #03DAC6;
+    border-style: none;
 
+}
+
+input {
+    line-height: 1.4rem;
+    width: 250px;
+    border: 2px solid #e5e7eb;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #21f8f6;
+    box-shadow: 1px 1px #21f8f6;
+}
+
+a {
+    color: #03DAC6;
+    text-decoration: none;
+}
+
+.error {
+    display: block;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #f72119;
+}
+
+input.errorbox {
+    border: 2px solid #f72119;
+    box-shadow: 1px 1px #f72119;
 }

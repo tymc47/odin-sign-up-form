@@ -6,18 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign-up Form</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="main">
             <div class="bg-gif">
                 <img src="background.gif" alt="">
-                <h3>Log in to explore</h3>
+                <h3><a href="">Login</a> to explore</h3>
             </div>
-            <form action="/" method="get" class="sign-up">
+            <form action="" method="get" class="sign-up">
                 <div class="form-section1">
-                    <h1>This is not a real online service! You know you want to explore this beautiful
-                        city. Sign up below to get started!
-                    </h1>
+                    <h1>Virtual Hong Kong! Sign up below to explore the virtual city.</h1>
                     <h1>You know you want to.</h1>
                 </div>
                 <div class="form-section2">
@@ -26,21 +25,21 @@
                         <ul>
                             <li>
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first_name" class="input">   
+                                <input type="text" id="first_name" class="input" required>   
                             </li>
                             <li>
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" class="input">   
+                                <input type="email" id="email" class="input" required>   
                             </li>
                             <li>
                                 <label for="password">PASSWORD</label>
-                                <input type="text" id="passowrd" class="input">   
+                                <input type="password" id="password" class="input" required>   
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last_name" class="input">   
+                                <input type="text" id="last_name" class="input" required>   
                             </li>
                             <li>
                                 <label for="phone">PHONE NUMBER</label>
@@ -48,7 +47,8 @@
                             </li>
                             <li>
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="text" id="confirm-passowrd" class="input">   
+                                <input type="password" id="confirm-password" class="input" required>
+                                <span class="error">&nbsp;</span>
                             </li>
                         </ul>
                     </div>
